@@ -11,15 +11,14 @@ h1 {
 }
 
 .resume-container {
-    background-color: lightgrey;
-    height: 120px;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #dee3e5 !important;
+    height: 100px;
+    padding: 10px;
 }
 
 .personal-details {
     text-align: right;
-    padding-top: 30px;
+    padding-top: 10px;
     font-size : 16px;
 }
 
@@ -60,10 +59,37 @@ hr {
     padding: 5px;
 }
 
+.project-summary-seperator {
+    border-top: 1px solid lightgrey;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
 .para {
     margin-bottom: 0px !important;
 }
 
 .space {
     margin : 30px;
+}
+
+.name {
+    text-align: start;
+}
+
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #e8f0f3 !important;
+}
+@media print {
+
+    @media print { 
+        .table td, .table th { 
+            background-color: transparent !important; 
+        } 
+    }
+
+    .table-striped > tbody > tr:nth-of-type(odd) {
+        background: #e8f0f3 !important;
+    }
 }
